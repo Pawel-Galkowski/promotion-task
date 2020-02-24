@@ -393,6 +393,10 @@ input:checked + .slide-container .nav label {
     padding: 0;
     margin: 0;
   }
+  body .container-fluid .row.shadow-box {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   body .hidden-lg-down {
     display: none;
   }
@@ -438,6 +442,29 @@ input:checked + .slide-container .nav label {
   .tab-com tr td.txt h5 {
     padding-top: 5px;
     margin-top: 5px;
+  }
+  .tab-com tr td.txt .max-width35 {
+    max-height: 35px;
+  }
+  .tab-com tr td.txt .info2 {
+    text-align: right;
+    transform: translate(-92%, -80%);
+    -webkit-transform: translate(-92%, -80%);
+    -moz-transform: translate(-92%, -80%);
+    -ms-transform: translate(-92%, -80%);
+    -o-transform: translate(-92%, -80%);
+  }
+  .tab-com tr td.txt .info2 .info-box {
+    text-align: left;
+    vertical-align: middle;
+  }
+  .tab-com tr td.txt .info2 .info-box .infotext {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .tab-com tr td.txt .info2::after {
+    margin-right: 8px;
+    margin-bottom: 18px;
   }
   .tab-com tr td.val {
     border: none;
@@ -539,6 +566,7 @@ input:checked + .slide-container .nav label {
   }
   .tab-com tr.feature td.val {
     width: 25%;
+    height: 40px;
   }
   .tab-com tr.feature td.recommended .inline-text, .tab-com tr.feature td.first .inline-text {
     display: none;
@@ -648,7 +676,6 @@ input:checked + .slide-container .nav label {
 }
 
 .tab-com tr td.txt .my-auto .info2 {
-  text-align: center;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   display: none;
@@ -656,8 +683,6 @@ input:checked + .slide-container .nav label {
   width: 300px;
   height: auto;
   min-height: 70px;
-  -webkit-transform: translate(-140px, -100%);
-          transform: translate(-140px, -100%);
 }
 
 .tab-com tr td.txt .my-auto .info2 .info-box {
@@ -665,18 +690,14 @@ input:checked + .slide-container .nav label {
   border-radius: 10px;
   padding: 1rem;
   display: inline-block;
-  text-align: center;
   width: 100%;
   height: 100%;
-  vertical-align: middle;
 }
 
 .tab-com tr td.txt .my-auto .info2 .info-box .infotext {
   color: var(--white);
   width: 100%;
   height: 100%;
-  text-align: center;
-  vertical-align: middle;
   font-size: 0.813rem;
   line-height: 1rem;
   color: var(--white);
@@ -690,7 +711,7 @@ input:checked + .slide-container .nav label {
   border-top: 10px solid var(--plum);
   width: 0;
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 13px;
 }
 
 .tab-com tr td.txt .max-width350 {
@@ -893,6 +914,19 @@ input:checked + .slide-container .nav label {
     line-height: 1rem;
     color: var(--plum);
     font-weight: normal;
+  }
+  .tab-com tr td.txt .info2 {
+    text-align: center;
+    -webkit-transform: translate(-140px, -90%);
+            transform: translate(-140px, -90%);
+  }
+  .tab-com tr td.txt .info2 .info-box {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .tab-com tr td.txt .info2 .info-box .infotext {
+    text-align: center;
+    vertical-align: middle;
   }
 }
 /*# sourceMappingURL=style.css.map */

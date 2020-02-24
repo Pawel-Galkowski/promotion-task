@@ -7,19 +7,19 @@ $(document).ready(function() {
     $(this)
       .next()
       .css("display", "block");
-    $(this).attr("src", "assets/info-hover.svg");
+    $(this).attr("src", "./assets/info-hover.svg");
   });
   $(".icon-lock").mouseout(function() {
     $(this)
       .next()
       .css("display", "none");
-    $(this).attr("src", "assets/info.svg");
+    $(this).attr("src", "./assets/info.svg");
   });
-  $(".icon-lock").click(function() {
+  $(".icon-lock").on("click", function() {
     $(this)
       .next()
       .css("display", "block");
-    $(this).attr("src", "assets/info-hover.svg");
+    $(this).attr("src", "./assets/info-hover.svg");
   });
   if ($(window).scrollTop() > 100) {
     $('.shadow-box').addClass('active');
