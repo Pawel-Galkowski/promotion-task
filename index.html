@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js "></script>
 </head>
 
 <body>
@@ -213,10 +214,12 @@
                                     <a href="# "><img src="./assets/img@3x.png " alt="Avast Free " /></a>
                                 </td>
                                 <td class="val recommended ">
-                                    <a href="# "><img src="./assets/img@3x.png " alt="Avast Premium, Single-Device " /></a>
+                                    <a href="# "><img src="./assets/img@3x.png "
+                                            alt="Avast Premium, Single-Device " /></a>
                                 </td>
                                 <td class="val ">
-                                    <a href="# "><img src="./assets/img@3x.png " alt="Avast Premium, Multi-Device " /></a>
+                                    <a href="# "><img src="./assets/img@3x.png "
+                                            alt="Avast Premium, Multi-Device " /></a>
                                 </td>
                                 <td class="val ">
                                     <a href="# "><img src="./assets/img@3x.png " alt="Avast Ultimate " /></a>
@@ -555,8 +558,9 @@
                                             <div class="col-md-1 hidden-lg-down no-border"></div>
                                             <div class="col-md-10 max-width ">
                                                 <h5>
-                                                    <b><span class="feature-title ">Scan for Wi-Fi security weaknesses<br/>
-                                                        Scan for Wi-Fi security
+                                                    <b><span class="feature-title ">Scan for Wi-Fi security
+                                                            weaknesses<br />
+                                                            Scan for Wi-Fi security
                                                             weaknesses</span></b>
                                                 </h5>
                                                 <p class="nomargin nopadding ">
@@ -755,7 +759,7 @@
                             </tr>
                             <tr class="buttons lower ">
                                 <td class="description ">
-                                    <p>* Anti-spam is available as a separate, <br/>free download.</p>
+                                    <p>* Anti-spam is available as a separate, <br />free download.</p>
                                 </td>
                                 <td class="c1 nopadding ">
                                     <a href="# "><button class="avast-button free ">Free Download</button></a>
@@ -787,7 +791,16 @@
             <div class="col col-md-1 hidden-lg-down "></div>
         </div>
     </div>
-    <script src="script.js "></script>
+
+    <script>
+        if ($(window).scrollTop() > 100) {
+            $(".shadow-box").addClass("active");
+        } else if ($(window).scrollTop() > 2000) {
+            $(".shadow-box").removeClass("active");
+        } else {
+            $(".shadow-box").removeClass("active");
+        }
+    </script>
 </body>
 
 </html>
