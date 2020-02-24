@@ -192,7 +192,7 @@ p {
 .slides .slide-container .slide .slider-box .box-inside img {
   width: 30px;
   height: 30px;
-  margin-top: 15px;
+  margin-top: 0;
 }
 
 .slides .slide-container .slide .slider-box .box-inside .sub span {
@@ -269,7 +269,7 @@ p {
 }
 
 .slides .slide-container .slide .slider-box .box-inside .avast-button {
-  margin: 5% 0;
+  margin: 1% 0;
   padding: 5%;
   font-size: 0.813rem;
   line-height: 1rem;
@@ -372,6 +372,15 @@ input:checked + .slide-container .nav label {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+@media only screen and (max-width: 400px) {
+  .slider-box .avast-button {
+    margin: 5% 0;
+  }
+  .slider-box img {
+    margin-top: 15px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   body {
     width: 100%;
@@ -405,10 +414,10 @@ input:checked + .slide-container .nav label {
     width: 70%;
   }
   .tab-com tr .avast-button.free::before {
-    content: url(/assets/download-m.svg);
+    content: url(./../assets/download-m.svg);
   }
   .tab-com tr .avast-button.buy::before {
-    content: url(/assets/store.svg);
+    content: url(./../assets/store.svg);
   }
   .tab-com tr td {
     display: block;
@@ -516,7 +525,7 @@ input:checked + .slide-container .nav label {
     border-right: none;
   }
   .tab-com tr.feature td.txt {
-    padding: 0px;
+    padding: 3px 0;
   }
   .tab-com tr.feature td.txt .max-width p {
     display: none;

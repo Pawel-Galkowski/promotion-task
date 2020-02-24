@@ -119,10 +119,10 @@ p {
   box-shadow: 0px 35px 50px -10px var(--grey-20);
   border: 1px solid var(--white);
   height: auto;
-  &.active{
+  &.active {
     top: 0;
     position: sticky;
-    z-index:9999;
+    z-index: 9999;
     background-color: var(--white);
   }
 }
@@ -223,7 +223,7 @@ p {
           img {
             width: 30px;
             height: 30px;
-            margin-top: 15px;
+            margin-top: 0;
           }
           .sub {
             span {
@@ -287,7 +287,7 @@ p {
             }
           }
           .avast-button {
-            margin: 5% 0;
+            margin: 1% 0;
             padding: 5%;
             @include caption-white;
           }
@@ -354,7 +354,7 @@ input {
       -moz-transition: opacity 1s ease-in-out;
       -ms-transition: opacity 1s ease-in-out;
       -o-transition: opacity 1s ease-in-out;
-}
+    }
     .nav label {
       display: block;
     }
@@ -380,6 +380,17 @@ input {
     &:hover {
       cursor: pointer;
       background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .slider-box {
+    .avast-button {
+      margin: 5% 0;
+    }
+    img {
+      margin-top: 15px;
     }
   }
 }
@@ -415,12 +426,12 @@ input {
         width: 70%;
         &.free {
           &::before {
-            content: url(/assets/download-m.svg);
+            content: url(./../assets/download-m.svg);
           }
         }
         &.buy {
           &::before {
-            content: url(/assets/store.svg);
+            content: url(./../assets/store.svg);
           }
         }
       }
@@ -539,7 +550,7 @@ input {
             border-right: none;
           }
           &.txt {
-            padding: 0px;
+            padding: 3px 0;
             .max-width p {
               display: none;
             }
