@@ -555,7 +555,7 @@ input:checked + .slide-container .nav label {
 }
 
 .tab-com tr td.val.have-that {
-  background: url("./assets/check.svg") #f2f2f6;
+  background: url("../assets/check.svg") #f2f2f6;
   background-repeat: no-repeat;
   background-size: initial;
   background-position: center;
@@ -563,7 +563,7 @@ input:checked + .slide-container .nav label {
 }
 
 .tab-com tr td.val.empty {
-  background: url("./assets/cross-s.svg") #fff;
+  background: url("../assets/cross-s.svg") #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: initial;
