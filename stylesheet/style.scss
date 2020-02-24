@@ -179,7 +179,7 @@ p {
       height: 400px;
       display: block;
       position: absolute;
-      background-color: var(--violet-light);
+      background-color: var(--grey-05);
       transform: scale(0);
       transition: all 0.7s ease-in-out;
       img {
@@ -404,8 +404,8 @@ input {
         width: 100%;
         padding: 0;
         margin: 0;
-        &.shadow-box{
-            box-shadow: none;
+        &.shadow-box {
+          box-shadow: none;
         }
       }
     }
@@ -585,10 +585,9 @@ input {
             border-bottom: 1px solid #f2f2f6;
             border-top: 1px solid #f2f2f6;
           }
-          &.val.empty.c1 {
-            border-left: 1px solid #f2f2f6;
-          }
           &.val {
+            border-left: 0;
+            border-right: 0;
             width: 25%;
             height: 40px;
           }
@@ -620,14 +619,14 @@ input {
       &.val {
         text-align: center;
         &.have-that {
-          background: url("./../assets/check.svg") #f2f2f6;
+          background: url("./../assets/check.svg") var(--violet-light);
           background-repeat: no-repeat;
           background-size: initial;
           background-position: center;
           background-blend-mode: multiply;
         }
         &.empty {
-          background: url("./../assets/cross-s.svg") #fff;
+          background: url("./../assets/cross-s.svg") var(--white);
           background-repeat: no-repeat;
           background-position: center;
           background-size: initial;
@@ -874,15 +873,15 @@ input {
           width: 40%;
         }
         &.recommended {
-          border-left: 2px solid var(--avast);
+          border-left: 1px solid var(--avast);
           border-top: none;
-          border-right: 2px solid var(--avast);
+          border-right: 1px solid var(--avast);
         }
         &.first {
-          border-top: 2px solid var(--avast);
+          border-top: 1px solid var(--avast);
         }
         &.last {
-          border-bottom: 2px solid var(--avast);
+          border-bottom: 1px solid var(--avast);
         }
         &.txt {
           .my-auto {
@@ -892,6 +891,10 @@ input {
             }
           }
           .max-width {
+            h5 {
+              @include normal;
+              font-weight: bold;
+            }
             .feature-title {
               @include normal;
               font-weight: bold;
