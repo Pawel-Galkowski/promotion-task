@@ -372,12 +372,24 @@ input:checked + .slide-container .nav label {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+span.mobileHidden {
+  font-size: 0.7rem;
+  color: inherit;
+  font-weight: inherit;
+}
+
 @media only screen and (max-width: 400px) {
   .slider-box .avast-button {
     margin: 5% 0;
   }
   .slider-box img {
     margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  span.mobileHidden {
+    display: none;
   }
 }
 
