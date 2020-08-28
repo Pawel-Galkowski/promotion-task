@@ -1,4 +1,4 @@
-# Promotion task
+# Promotion task 
 Promotion task created for avast company
 
 ## Technology
