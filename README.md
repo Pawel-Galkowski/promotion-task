@@ -1,5 +1,6 @@
 # Promotion task 
-Promotion task created for avast company
+Promotion task created for avast company.
+
 
 ## Technology
     - HTML
